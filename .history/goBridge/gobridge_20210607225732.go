@@ -15,6 +15,6 @@ func GetBridgeObj() js.Value {
 	return obj
 }
 
-func RegisterField(name string, value interface{}) {
+func registerField(name string, value interface{}) {
 	GetBridgeObj().Set(name, value)
 }
